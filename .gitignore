@@ -2,5 +2,13 @@
 
 neovim/.config/nvim/lazy-lock.json
 
+# nnn
+nnn/.config/nnn/plugins/*
+nnn/.config/nnn/.lastd
+nnn/.config/nnn/**/*.tar.gz
+nnn/.config/nnn/sessions/*
+nnn/.config/nnn/nnn-*
+nnn/.config/nnn/bookmarks
+
 Session.vim
 
