@@ -8,6 +8,9 @@ printf "$MAGENTA$BOLD%s$NORMAL\n" "🛠  Beginning tool configuration..."
 # Link dotfiles with stow
 source _scripts/stow.sh
 
+# Install the current LTS Node version
+source _scripts/install-lts-node.sh
+
 source _scripts/install-neovim-plugins.sh
 
 printf "$GREEN$BOLD%s$NORMAL\n" "Configuration complete."
