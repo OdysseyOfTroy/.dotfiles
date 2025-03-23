@@ -18,6 +18,14 @@ export DOTFILES_LOCATION="$HOME/.dotfiles"
 export HOMEBREW_BUNDLE_FILE="$HOME/.dotfiles/_homebrew/Brewfile"
 
 eval "$(starship init zsh)"
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # zsh-syntax-highlighting.zsh must be sourced at the end of .zshrc
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# fnm
+FNM_PATH="/Users/troy/Library/Application Support/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/Users/troy/Library/Application Support/fnm:$PATH"
+  eval "`fnm env`"
+fi
