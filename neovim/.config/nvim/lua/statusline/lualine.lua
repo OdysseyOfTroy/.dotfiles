@@ -55,9 +55,8 @@ local conditions = {
 -- Config
 local config = {
   options = {
-    -- Disable sections and component separators
     component_separators = '',
-    section_separators = '',
+    section_separators = { left = '', right = '' },
     theme = aura_theme
   },
   sections = {
@@ -134,8 +133,8 @@ local config = {
           color = { fg = '#ffffff', gui = 'bold' },
         },
         {
-          'o:encoding', -- option component same as &encoding in viml
-          fmt = string.upper, -- I'm not sure why it's upper case either ;)
+          'o:encoding',
+          fmt = string.upper,
           cond = conditions.hide_in_width,
           color = { fg = colors.green, gui = 'bold' },
         },
@@ -148,7 +147,6 @@ local config = {
         },
         {
           'diff',
-          -- Is it me or the symbol for modified us really weird
           symbols = { added = ' ', modified = '󰝤 ', removed = ' ' },
           diff_color = {
             added = { fg = colors.green },
