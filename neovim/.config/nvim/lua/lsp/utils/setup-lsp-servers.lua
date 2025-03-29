@@ -65,6 +65,13 @@ local server_config = {
             }
         }
     },
+    rust_analyzer = {
+        settings = {
+            diagnostics = {
+                globals = { 'vim' }
+            }
+        }
+    },
 }
 
 for _, lsp in ipairs(servers) do
