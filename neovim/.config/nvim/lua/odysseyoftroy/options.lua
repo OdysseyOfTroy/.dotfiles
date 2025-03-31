@@ -9,6 +9,7 @@ vim.o.linebreak = true -- insert linebreak forcing wrap without breaking words
 vim.o.laststatus = 3 -- make statusline global
 vim.o.number = true -- show the current line number
 vim.o.relativenumber = true -- show relative line numbers
+vim.opt.conceallevel = 1
 vim.opt.swapfile = false
 
 -- Grep settings
