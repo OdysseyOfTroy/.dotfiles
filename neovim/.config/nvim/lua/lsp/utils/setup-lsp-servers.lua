@@ -22,7 +22,6 @@ local servers = {
     'html',
     'yamlls',
     'lua_ls',
-    'rust_analyzer',
 }
 
 local server_config = {
@@ -62,13 +61,6 @@ local server_config = {
                 telemetry = {
                     enable = false
                 }
-            }
-        }
-    },
-    rust_analyzer = {
-        settings = {
-            diagnostics = {
-                globals = { 'vim' }
             }
         }
     },
