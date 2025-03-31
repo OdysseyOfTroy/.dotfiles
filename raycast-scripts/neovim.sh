@@ -15,11 +15,5 @@
 # @raycast.packageName Raycast Scripts
 
 osascript <<EOF
-tell application "iTerm"
-    activate
-    set newWindow to (create window with default profile)
-    tell current session of newWindow
-        write text "nvim"
-    end tell
-end tell
+    do shell script "wezterm-gui start --" 
 EOF

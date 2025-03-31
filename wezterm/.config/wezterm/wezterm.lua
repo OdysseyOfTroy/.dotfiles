@@ -27,6 +27,7 @@ config.window_padding = {
 -- Misc
 config.max_fps = 120
 config.prefer_egl = true
+config.window_close_confirmation = 'NeverPrompt'
 
 wezterm.on('gui-startup', function()
     local tab, pane, window = mux.spawn_window{}
