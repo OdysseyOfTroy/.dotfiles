@@ -16,6 +16,7 @@ export ZSHRC_LOCATION="$HOME/.zshrc"
 export ALIASES_LOCATION="$HOME/.aliases"
 export DOTFILES_LOCATION="$HOME/.dotfiles"
 export HOMEBREW_BUNDLE_FILE="$HOME/.dotfiles/_homebrew/Brewfile"
+export STARSHIP_CONFIG="$HOME/.dotfiles/starship/.config/starship/starship.toml"
 
 eval "$(starship init zsh)"
 eval "$(fnm env --use-on-cd --shell zsh)"
