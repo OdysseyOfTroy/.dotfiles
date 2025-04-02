@@ -99,6 +99,16 @@ local config = {
             'filename',
             cond = conditions.buffer_not_empty,
             color = { fg = colors.magenta, gui = 'bold' },
+        },
+        { 
+            function()
+            local reg = vim.fn.reg_recording
+                if reg ~= "" then
+                    return "Recording @" .. reg
+                end
+                return nil
+            end,
+            draw_empty = false,
         }
     },
     lualine_c = {
@@ -167,6 +177,7 @@ local config = {
     lualine_z = {},
   },
 }
+
 
 lualine.setup(config)
 end
