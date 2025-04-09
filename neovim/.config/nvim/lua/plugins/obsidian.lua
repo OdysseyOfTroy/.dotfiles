@@ -26,6 +26,9 @@ return {
         nvim_cmp = true,
         min_chars = 2,
     },
+    note_id_func = function(title)
+        return title
+    end,
     mappings = {
         -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
         ["gf"] = {
