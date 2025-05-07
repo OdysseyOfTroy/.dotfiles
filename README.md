@@ -1,4 +1,4 @@
-I want to thank [rensftw](https://github.com/rensftw)for inspiration and a working example through her own .dotfiles. Anything that looks remarkably similar likely originates from her own.
+I want to thank [rensftw](https://github.com/rensftw) for inspiration and a working example through her own .dotfiles. Anything that looks remarkably similar likely originates from her own.
 
 # Scripts
 | Script | Description |
