@@ -6,3 +6,6 @@ I want to thank [rensftw](https://github.com/rensftw) for inspiration and a work
 | `install.sh`| This script installs Homebrew and all Casks defined in `Brewfile`|
 | `configure.sh`| Configures tools and applies dotfiles. | 
 | `uninstall.sh` | Removes all packages, tools and config files. |
+
+# What I want to add next
+[ultimate-autopair.nvim](https://github.com/altermo/ultimate-autopair.nvim)
